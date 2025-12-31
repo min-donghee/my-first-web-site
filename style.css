@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 5px solid gray;
+    margin: 0;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#list {
+    border-right: 5px solid gray;
+    margin: 0;
+    width: 100px;
+    padding: 20px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 180px 0.9fr;
+}
