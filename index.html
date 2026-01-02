@@ -5,10 +5,40 @@
     <title>자기소개 사이트</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function setcolor(color) {
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while (i < alist.length) {
+                alist[i].style.color = color;
+                i = i + 1;
+            }
+        }
+        function nightdayhandler(self) {
+            var target = document.querySelector('body')
+            if (self.value === 'night') {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                self.value = 'day';
+                
+                setcolor('powderblue');
+            } else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                self.value = 'night';
+                
+                setcolor('black');
+            }
+        }
+    </script>
 
 </head>
 
 <body>
+    <input id="night_day" type="button" value="night" onclick="
+        nightdayhandler(this);
+">
+
     <h1><a href="index.html">자기소개 사이트</a></h1>
     <div id="grid">
         <ul id="list">
@@ -25,6 +55,7 @@
             이곳에는 제가 진행한 다양한 프로젝트와 그 과정에서 배우고 성장한 기록을 담았습니다.<br>
             또한 새로운 기술과 도전을 두려워하지 않고, 끊임없이 학습하며 더 나은 개발자가 되기 위해 노력하고 있습니다.<br>
             관심 있는 분들과 경험과 지식을 공유하고, 함께 성장하는 계기가 되었으면 합니다.<br>
+            계속 업데이트 하면서 자기소개 페이지를 업로드 하겠습니다.
         </div>
     </div>
 
